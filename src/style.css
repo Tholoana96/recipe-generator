@@ -2,4 +2,97 @@ body {
   background: rgb(20, 20, 20);
   text-align: center;
   color: rgb(172, 168, 168);
+  font-family: "Moderustic", sans-serif;
+}
+
+a {
+  color: #885df1;
+}
+
+a:hover {
+  color: rgb(165, 81, 165);
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #885df1;
+}
+
+form {
+  padding: 30px;
+  background-color: rgb(30, 30, 30);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid rgba(172, 168, 168, 0.5);
+  width: 80%;
+  max-width: 500px; /* Ensures input doesn’t stretch too wide */
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: rgb(172, 168, 168); /* Match text color with body text */
+  background: rgb(40, 40, 40); /* Slightly lighter background */
+  margin-bottom: 10px; /* Space between input and button */
+}
+
+.submit-button {
+  background: #885df1;
+  color: white;
+  border: none;
+  width: auto;
+  max-width: 170px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #d3cdcd;
+  color: #885df1;
+}
+
+.submit-button:focus {
+  outline: 2px solid #885df1;
+  outline-offset: 2px;
+}
+
+.recipe {
+  font-size: 16px;
+  background-color: rgb(40, 40, 40);
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid #885df1;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+  color: rgb(172, 168, 168);
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+  color: rgb(172, 168, 168);
 }

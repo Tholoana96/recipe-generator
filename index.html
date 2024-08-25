@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
@@ -13,14 +19,15 @@
       <form>
         <input
           type="text"
+          class="instructions"
           placeholder="Enter the main ingredient for the recipe"
           autofocus
           required
           autocomplete="off"
         />
-        <input type="submit" value="Generate Recipe" />
+        <input type="submit" class="submit-button" value="Generate Recipe" />
       </form>
-      <div>
+      <div class="recipe">
         Try using an ingredient to generate a new recipe!
         <br />
         Example: chicken, pasta, chocolate

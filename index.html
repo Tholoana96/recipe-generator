@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
@@ -16,10 +18,11 @@
     <h1>Welcome to the AI Recipe Generator</h1>
 
     <main>
-      <form>
+      <form id="recipe-generator-form">
         <input
           type="text"
           class="instructions"
+          id="user-instructions"
           placeholder="Enter the main ingredient for the recipe"
           autofocus
           required
@@ -32,6 +35,7 @@
         <br />
         Example: chicken, pasta, chocolate
       </div>
+      <div class="recipe hidden" id="recipes"></div>
     </main>
 
     <footer>
@@ -40,8 +44,8 @@
         >Tholoana Manyane</a
       >
       and is
-      <a href="https://github.com/Tholoana96/recipe-generator" target="_blank">
-        open-sourced on GitHub</a
+      <a href="https://github.com/Tholoana96/recipe-generator" target="_blank"
+        >open-sourced on GitHub</a
       >
       and is
       <a href="https://myrecipe-generator.netlify.app" target="_blank"
